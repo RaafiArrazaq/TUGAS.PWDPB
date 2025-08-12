@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            color: yellow;
+        }
+        input {
+            margin-right: 10px;
+        }
+        h2 {
+            color: red;
+        }
+        p.ex {
+            color: rgb(0, 0, 255);
+        }
+        div {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="alternate" direction="right"><h2>Demo Membuat Control Text</h2></marquee>
+    <form action="">
+    <fieldset style="color: orange;">
+        <legend>Ini Adalah Form Bio Data</legend>
+        <div>
+    <p class="ex"> nama:</p>
+        <input type="text" name="txtnama" size="30"/><br>
+        <br/>
+        <p style="color: yellow;">alamat:</p>
+        <input type ="text" name="txtalamat" size="50"/><br>
+        <br/>
+        <p style="color: green;">No .telepon:</p>
+        <input type="text" name ="txtTelepon" size="20"/><br/>
+        <p style="color: cyan;">Kelamin</p>
+        <input type ="radio" name ="Kelamin" value="laki-laki">laki-laki
+        <input type ="radio" name ="Kelamin" value="perempuan">perempuan<br/>
+        <p style="color: blueviolet;">Hobi</p>
+        <input type="checkbox" name="hobi" value="membaca">membaca<br>
+        <input type="checkbox" name="hobi" value="menulis">menulis<br>
+        <input type="checkbox" name="hobi" value="main game">main game<br>
+        <label for="Jurusan">Jurusan</label><br>
+        <select name="Jurusan" id="Jurusan">
+            <option value="RPL">RPL</option>
+            <option value="MPLB">MPLB</option>
+            <option value="AKL">AKL</option>
+            <option value="ULW">ULW</option>
+            <option value="UPW">UPW</option>
+        </select>
+        <p><input type="file" value="file">Masukkan file</p>
+             <p><input type="file" accept="image/*" id="gambar" name="gambar">
+                <button type="submit">Unggah Gambar</button>
+             <input type="checkbox">Syarat sudah dipenuhi</p>
+        <p style="color: chartreuse;">Ulasan</p>
+        <textarea name="user_feedback" id="user_feedback">Buat Alasan Anda Disini...</textarea>
+        <p><input type="submit" value="submit"><input type ="reset" value="Batal"/></p><button>Select</button>
+        </div>
+    </fieldset> 
+    </form>
+</body>
+</html>
